@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Workbench';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/workbench@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/workbench@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/workbench@latest/latin-400-normal.ttf) format('truetype');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  }
+
+@font-face {
+	font-family: 'Iosevka Nerd Mono';
+	font-style: normal;
+	font-display: swap;
+	src: url('IosevkaNerdMono.ttf') format(truetype);
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+.header-curiosity {
+	font-weight: bold;
+	color: #fff674;
+	padding-top: 0.5rem;
+	text-align: center;
+	font-size: 80%;
+}
+.header-font {
+    font-family: 'Workbench';
+}
+
+.header-title {
+    font-family: 'Workbench';
+    letter-spacing: 4px;
+	text-shadow: #ffa9be 4px 0px 2px;
+}
+
+
+span.underlined {
+text-decoration-line: underline;
+text-decoration-style: "solid";
+text-decoration-color: rgba(254,108,144,1);
+text-decoration-thickness: 8px;
+}
+
+body {
+	font-family: 'Iosevka Nerd Mono', monospace;
+	margin:20px auto;
+	max-width:800px;
+	line-height:.1.5em;
+	font-size:1.1em;
+	background-color:#260d34;
+	color: #ffa9be;
+	padding:0 10px;
+	hyphens:auto;
+}
+header {
+
+	position-anchor: auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	white-space:nowrap;
+	flex-wrap: wrap;
+	border-bottom: 2px solid #fe6c90;
+	padding-bottom:0.5rem;
+	margin-bottom: 2rem;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+footer {
+	border-top: 2px solid #fe6c90;
+	padding: 2%;
+	column-count: 2;
+}
+
+
+footer p {
+	margin: 0.2em 0 0.2em 0;
+}
+
+footer a {
+	padding: 0%;
+	font-size: 250%;
+	line-height: 70%;
+
+}
+
+footer a:hover {
+	text-decoration:none;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+nav li { display:inline-block no; margin-right:20px; }
+.navlogo { width:50px; height:50px; }
+a { color:#fe6c90; text-decoration:none; }
+a:hover { color:#fe6c90; text-decoration:underline; }
+h1, h2, h3 {
+	display:inline;
+	line-height:1.2;
+	color:#ecc6db;
+	font-size:1.3em;
+}
+h2 { font-size:1.2em; }
+h3 { font-size:1.1em; }
+.h:hover a[aria-hidden] {
+	display:inline;
+	color:#fe6c90;
+	size:75%;
+}
+.h a[aria-hidden] { display:none; }
+pre {
+	tab-size:4; 
+	background: #20232a;
+	color: #969ba6;
+	border: 5px solid lightgrey;
+	padding: 5px;
+	tab-size:4;
+}
+.red { color:#fe6c90; }
+.green { color:#98be65; }
+input[type=submit] {
+	padding:5px 15px;
+	background:#ecc6db;
+	border:0 none;
+	-webkit-border-radius:10px;
+	color: #260d34;
+	border-radius:10px;
+}
+
+progress {
+	height: 12px;
+	width: 90%;
+	border-radius: 7px;
+	border: 0px solid #260d34;
+	background-color: #ecc6db;
+	color: #fe6c90;
+}
+
+progress::-moz-progress-bar {
+	color: transparent;
+	background-color: #fe6c90;
+	border-radius: 7px;
+}
+
+progress::-webkit-progress-bar {
+	background-color: #ecc6db;
+}
+progress::-webkit-progress-value {
+	background-color: #fe6c90;
+	border-radius: 7px;
+}
+
+input[type=checkbox] { color: #260d34; background-color: #ecc6db; }
+ul[userlist] { list-style:none; }
+ul[userlist] li[online]::before {
+	content:"\2022";
+	color:#fe6c90;
+	font-weight:bold;
+	display:inline-block;
+	width:1.0em;
+	margin-left:-1.0em;
+}
+ul[userlist] li[online$=true]::before {	color:#98be65; }
+textarea { background-color: #260d34; color: #ecc6db; }
+input { background-color: #260d34; color: #ecc6db; }
+#TOC {
+	border: 1px solid;
+	position: relative;
+}
+#TOC:before {
+	border-bottom: 1px solid;
+	content: 'Table of Contents';
+	display: block;
+	font-weight: bold;
+	padding: 5px;
+	position: relative;
+}
+.date {
+	color: grey;
+	display: block;
+	font-family: monospace;
+	margin-top: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 16ch;
+}
+
+section {
+	animation-duration: 2s;
+	animation-name: cube-rotate;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+  }
+
+.logo {
+	color: inherit
+}
+.logo:hover {
+	animation: infinite;
+	animation-iteration-count: infinite;
+	text-decoration: none;
+}
+  
+  /* Isolation creates a new stacking context for mix-blend-mode. See: https://developer.mozilla.org/en-US/docs/Web/CSS/isolation */
+  .isolate {
+	isolation: isolate;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+  }
+
+  #pagedoll {
+    z-index: 10;
+}
+
+
+  
+  @keyframes cube-rotate {
+	from {
+	  transform: perspective(600px) rotate3d(0.6, 0.05, 0.5, -20deg);
+	}
+  
+	to {
+	  transform: perspective(600px) rotate3d(0.6, 0.05, 0.5, 20deg);
+	}
+  }
+  
+  @keyframes shimmer {
+	from  {
+			filter: contrast(190%) brightness(500%);
+		  }
+		
+		  to {
+			filter: contrast(190%) brightness(130%);
+		  }
+		}
+		
+		.noise {
+		  text-shadow: #ffffff2f 0px 0px 5px, #e2a74d3f 0px 0px 15px;
+		  background: linear-gradient(80deg, #21cfee, #ff2f63), url("data:image/svg+xml,%3Csvg viewBox='0 0 400 310' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+		  background-clip: text;
+		  -webkit-background-clip: text;
+		  color: transparent;
+		  animation-duration: 2s;
+		  animation-name: shimmer;
+		  animation-iteration-count: infinite;
+		  animation-direction: alternate-reverse;
+		  font-family: 'Workbench';
+		  font-weight: bold;
+		  font-size: 123%;
+		  letter-spacing: 4px;
+		}
+
+		
+		.overlay {
+		  position: absolute;
+		  top: 0;
+		  width: 100%;
+		  height: 100%;
+		  background: antiquewhite;
+		  mix-blend-mode: multiply;
+		}
+		
+		@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+		  .overlay {
+			opacity: 0.6;
+		  }
+		}
+		@keyframes shake {
+			0% { transform: translate(1px, 1px) rotate(0deg); }
+			10% { transform: translate(-1px, -2px) rotate(-1deg); }
+			20% { transform: translate(-3px, 0px) rotate(1deg); }
+			30% { transform: translate(3px, 2px) rotate(0deg); }
+			40% { transform: translate(1px, -1px) rotate(1deg); }
+			50% { transform: translate(-1px, 2px) rotate(-1deg); }
+			60% { transform: translate(-3px, 1px) rotate(0deg); }
+			70% { transform: translate(3px, 1px) rotate(-1deg); }
+			80% { transform: translate(-1px, -1px) rotate(1deg); }
+			90% { transform: translate(1px, 2px) rotate(0deg); }
+			100% { transform: translate(1px, -2px) rotate(-1deg); }
+		  }
