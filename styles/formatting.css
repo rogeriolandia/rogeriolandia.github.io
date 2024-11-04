@@ -1,0 +1,122 @@
+span.underlined {
+text-decoration-line: underline;
+text-decoration-style: "solid";
+text-decoration-color: rgba(254,108,144,1);
+text-decoration-thickness: 8px;
+}
+
+body {
+	font-family: 'Iosevka Nerd Mono', monospace;
+	margin:20px auto;
+	max-width:800px;
+	line-height:.1.5em;
+	font-size:1.1em;
+	background-color:#260d34;
+	color: #ffa9be;
+	padding:0 10px;
+	hyphens:auto;
+}
+
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+nav li { display:inline-block no; margin-right:20px; }
+.navlogo { width:50px; height:50px; }
+a { color:#fe6c90; text-decoration:none; }
+a:hover { color:#fe6c90; text-decoration:underline; }
+h1, h2, h3 {
+	display:inline;
+	line-height:1.2;
+	color:#ecc6db;
+	font-size:1.3em;
+}
+h2 { font-size:1.2em; }
+h3 { font-size:1.1em; }
+.h:hover a[aria-hidden] {
+	display:inline;
+	color:#fe6c90;
+	size:75%;
+}
+.h a[aria-hidden] { display:none; }
+pre {
+	tab-size:4; 
+	background: #20232a;
+	color: #969ba6;
+	border: 5px solid lightgrey;
+	padding: 5px;
+	tab-size:4;
+}
+.red { color:#fe6c90; }
+.green { color:#98be65; }
+input[type=submit] {
+	padding:5px 15px;
+	background:#ecc6db;
+	border:0 none;
+	-webkit-border-radius:10px;
+	color: #260d34;
+	border-radius:10px;
+}
+
+progress {
+	height: 12px;
+	width: 90%;
+	border-radius: 7px;
+	border: 0px solid #260d34;
+	background-color: #ecc6db;
+	color: #fe6c90;
+}
+
+progress::-moz-progress-bar {
+	color: transparent;
+	background-color: #fe6c90;
+	border-radius: 7px;
+}
+
+progress::-webkit-progress-bar {
+	background-color: #ecc6db;
+}
+progress::-webkit-progress-value {
+	background-color: #fe6c90;
+	border-radius: 7px;
+}
+
+input[type=checkbox] { color: #260d34; background-color: #ecc6db; }
+ul[userlist] { list-style:none; }
+ul[userlist] li[online]::before {
+	content:"\2022";
+	color:#fe6c90;
+	font-weight:bold;
+	display:inline-block;
+	width:1.0em;
+	margin-left:-1.0em;
+}
+ul[userlist] li[online$=true]::before {	color:#98be65; }
+textarea { background-color: #260d34; color: #ecc6db; }
+input { background-color: #260d34; color: #ecc6db; }
+#TOC {
+	border: 1px solid;
+	position: relative;
+}
+#TOC:before {
+	border-bottom: 1px solid;
+	content: 'Table of Contents';
+	display: block;
+	font-weight: bold;
+	padding: 5px;
+	position: relative;
+}
+.date {
+	color: grey;
+	display: block;
+	font-family: monospace;
+	margin-top: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 16ch;
+}

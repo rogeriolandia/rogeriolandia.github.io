@@ -1,0 +1,73 @@
+.header-curiosity {
+	font-weight: bold;
+	color: #fff674;
+	padding-top: 0.5rem;
+	text-align: center;
+	font-size: 80%;
+}
+.header-font {
+    font-family: 'Workbench';
+}
+
+.header-title {
+    font-family: 'Workbench';
+    letter-spacing: 4px;
+	text-shadow: #ffa9be 4px 0px 2px;
+}
+
+header {
+
+	position-anchor: auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	white-space:nowrap;
+	flex-wrap: wrap;
+	border-bottom: 2px solid #fe6c90;
+	padding-bottom:0.5rem;
+	margin-bottom: 2rem;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+section {
+	animation-duration: 2s;
+	animation-name: cube-rotate;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+  }
+
+.logo {
+	color: inherit
+}
+
+.logo:hover {
+	animation: infinite;
+	animation-iteration-count: infinite;
+	text-decoration: none;
+}
+  
+  .isolate {
+	isolation: isolate;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+  }
+
+		.noise {
+		  text-shadow: #ffffff2f 0px 0px 5px, #e2a74d3f 0px 0px 15px;
+		  background: linear-gradient(80deg, #21cfee, #ff2f63), url("data:image/svg+xml,%3Csvg viewBox='0 0 400 310' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+		  background-clip: text;
+		  -webkit-background-clip: text;
+		  color: transparent;
+		  animation-duration: 2s;
+		  animation-name: shimmer;
+		  animation-iteration-count: infinite;
+		  animation-direction: alternate-reverse;
+		  font-family: 'Workbench';
+		  font-weight: bold;
+		  font-size: 123%;
+		  letter-spacing: 4px;
+		}
