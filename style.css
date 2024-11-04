@@ -33,7 +33,14 @@
 	text-shadow: #ffa9be 4px 0px 2px;
 }
 
+.hover-glow {
+	transition: all .2s ease-in-out;
 
+	&:hover {
+	  transform: scale(1.5);
+	  text-shadow: 0 5px 15px rgba(254,108,144,1)
+	}
+}
 span.underlined {
 text-decoration-line: underline;
 text-decoration-style: "solid";
