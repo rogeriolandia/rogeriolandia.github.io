@@ -33,11 +33,18 @@
 		}
 
 
-.hover-glow {
+.grow-on-hover {
   transition: all .2s ease-in-out;
-    
-  &:hover {
-    transform: scale(1.5);
-    text-shadow: 0 5px 15px rgba(254,108,144,1)
-  }
+}
+
+.grow-on-hover:hover {
+  transform: scale(1.2);
+}
+
+.glow-on-hover {
+  transition: all .2s ease-in-out;
+}
+
+.glow-on-hover:hover {
+  text-shadow: 0 0 5px #fe6c90;
 }
