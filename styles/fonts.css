@@ -11,7 +11,7 @@
 	font-family: 'Iosevka Nerd Mono';
 	font-style: normal;
 	font-display: swap;
-	src: url('IosevkaNerdMono.ttf') format(truetype);
+	src: url(/IosevkaNerdMono.ttf) format(truetype);
 	font-weight: normal;
 	letter-spacing: 2px;
 }
